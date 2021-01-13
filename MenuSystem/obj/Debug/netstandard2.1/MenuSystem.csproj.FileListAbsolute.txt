@@ -1,0 +1,8 @@
+/Users/siimmelles/CSharp2019/icd0008-2019f/MineSweeper/MenuSystem/bin/Debug/netstandard2.1/MenuSystem.deps.json
+/Users/siimmelles/CSharp2019/icd0008-2019f/MineSweeper/MenuSystem/bin/Debug/netstandard2.1/MenuSystem.dll
+/Users/siimmelles/CSharp2019/icd0008-2019f/MineSweeper/MenuSystem/bin/Debug/netstandard2.1/MenuSystem.pdb
+/Users/siimmelles/CSharp2019/icd0008-2019f/MineSweeper/MenuSystem/obj/Debug/netstandard2.1/MenuSystem.csprojAssemblyReference.cache
+/Users/siimmelles/CSharp2019/icd0008-2019f/MineSweeper/MenuSystem/obj/Debug/netstandard2.1/MenuSystem.AssemblyInfoInputs.cache
+/Users/siimmelles/CSharp2019/icd0008-2019f/MineSweeper/MenuSystem/obj/Debug/netstandard2.1/MenuSystem.AssemblyInfo.cs
+/Users/siimmelles/CSharp2019/icd0008-2019f/MineSweeper/MenuSystem/obj/Debug/netstandard2.1/MenuSystem.dll
+/Users/siimmelles/CSharp2019/icd0008-2019f/MineSweeper/MenuSystem/obj/Debug/netstandard2.1/MenuSystem.pdb

@@ -1,0 +1,59 @@
+@page
+@model WebApp.Pages.GamePages.NewCustomGame
+
+@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<div>
+    <h2>Start new Custom Game:</h2>
+    
+    <hr>
+    <div class="row">
+    
+        <div class="col-md-4">
+            <form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="GameState.BoardHeight" class="control-label"></label>
+                    <input asp-for="GameState.BoardHeight" class="form-control" />
+                    <span asp-validation-for="GameState.BoardHeight" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="GameState.BoardWidth" class="control-label"></label>
+                    <input asp-for="GameState.BoardWidth" class="form-control" />
+                    <span asp-validation-for="GameState.BoardWidth" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="GameState.MinesAmount" class="control-label"></label>
+                    <input asp-for="GameState.MinesAmount" class="form-control" />
+                    @{
+                        if (Model.IllegalAmountOfMines)
+                        {
+                            <span class="text-danger">Illegal amount of mines!</span>
+                        }
+                    }
+                </div>
+                <div class="form-group">
+                    <label asp-for="GameState.Name" class="control-label"></label>
+                    <input asp-for="GameState.Name" class="form-control" />
+                    <span asp-validation-for="GameState.Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Start game" class="btn btn-success" />
+                </div>
+                <a class="btn btn-primary" id="gameTable" asp-page="GameIndex">Back to main menu</a>  
+
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

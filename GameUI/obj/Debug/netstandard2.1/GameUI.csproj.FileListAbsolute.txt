@@ -1,0 +1,11 @@
+/Users/siimmelles/CSharp2019/icd0008-2019f/MineSweeper/GameUI/bin/Debug/netstandard2.1/GameUI.deps.json
+/Users/siimmelles/CSharp2019/icd0008-2019f/MineSweeper/GameUI/bin/Debug/netstandard2.1/GameUI.dll
+/Users/siimmelles/CSharp2019/icd0008-2019f/MineSweeper/GameUI/bin/Debug/netstandard2.1/GameUI.pdb
+/Users/siimmelles/CSharp2019/icd0008-2019f/MineSweeper/GameUI/bin/Debug/netstandard2.1/GameEngine.dll
+/Users/siimmelles/CSharp2019/icd0008-2019f/MineSweeper/GameUI/bin/Debug/netstandard2.1/GameEngine.pdb
+/Users/siimmelles/CSharp2019/icd0008-2019f/MineSweeper/GameUI/obj/Debug/netstandard2.1/GameUI.csprojAssemblyReference.cache
+/Users/siimmelles/CSharp2019/icd0008-2019f/MineSweeper/GameUI/obj/Debug/netstandard2.1/GameUI.AssemblyInfoInputs.cache
+/Users/siimmelles/CSharp2019/icd0008-2019f/MineSweeper/GameUI/obj/Debug/netstandard2.1/GameUI.AssemblyInfo.cs
+/Users/siimmelles/CSharp2019/icd0008-2019f/MineSweeper/GameUI/obj/Debug/netstandard2.1/GameUI.csproj.CopyComplete
+/Users/siimmelles/CSharp2019/icd0008-2019f/MineSweeper/GameUI/obj/Debug/netstandard2.1/GameUI.dll
+/Users/siimmelles/CSharp2019/icd0008-2019f/MineSweeper/GameUI/obj/Debug/netstandard2.1/GameUI.pdb

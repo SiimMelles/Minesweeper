@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "XvN2rpcBavlJjMwngVh8DkG3m3emYrHaUCV6LRAkPZd21NsJ2gBZi63waX88SC0tFar0zxCR8hyBcHcSOESmcA==",
+  "success": true,
+  "projectFilePath": "/Users/siimmelles/CS/sygis/MineSweeper/GameUI/GameUI.csproj",
+  "expectedPackageFiles": [
+    "/Users/siimmelles/.nuget/packages/microsoft.bcl.asyncinterfaces/1.0.0/microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",
+    "/Users/siimmelles/.nuget/packages/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg.sha512",
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/system.buffers/4.5.0/system.buffers.4.5.0.nupkg.sha512",
+    "/Users/siimmelles/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/siimmelles/.nuget/packages/system.runtime.compilerservices.unsafe/4.6.0/system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512",
+    "/Users/siimmelles/.nuget/packages/system.text.encodings.web/4.6.0/system.text.encodings.web.4.6.0.nupkg.sha512",
+    "/Users/siimmelles/.nuget/packages/system.text.json/4.6.0/system.text.json.4.6.0.nupkg.sha512",
+    "/Users/siimmelles/.nuget/packages/system.threading.tasks.extensions/4.5.2/system.threading.tasks.extensions.4.5.2.nupkg.sha512"
+  ],
+  "logs": []
+}

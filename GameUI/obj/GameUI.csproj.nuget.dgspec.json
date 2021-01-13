@@ -1,0 +1,128 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/siimmelles/CS/sygis/MineSweeper/GameUI/GameUI.csproj": {}
+  },
+  "projects": {
+    "/Users/siimmelles/CS/sygis/MineSweeper/GameEngine/GameEngine.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/siimmelles/CS/sygis/MineSweeper/GameEngine/GameEngine.csproj",
+        "projectName": "GameEngine",
+        "projectPath": "/Users/siimmelles/CS/sygis/MineSweeper/GameEngine/GameEngine.csproj",
+        "packagesPath": "/Users/siimmelles/.nuget/packages/",
+        "outputPath": "/Users/siimmelles/CS/sygis/MineSweeper/GameEngine/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/siimmelles/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[4.6.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/siimmelles/CS/sygis/MineSweeper/GameUI/GameUI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/siimmelles/CS/sygis/MineSweeper/GameUI/GameUI.csproj",
+        "projectName": "GameUI",
+        "projectPath": "/Users/siimmelles/CS/sygis/MineSweeper/GameUI/GameUI.csproj",
+        "packagesPath": "/Users/siimmelles/.nuget/packages/",
+        "outputPath": "/Users/siimmelles/CS/sygis/MineSweeper/GameUI/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/siimmelles/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {
+              "/Users/siimmelles/CS/sygis/MineSweeper/GameEngine/GameEngine.csproj": {
+                "projectPath": "/Users/siimmelles/CS/sygis/MineSweeper/GameEngine/GameEngine.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

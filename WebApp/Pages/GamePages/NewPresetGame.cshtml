@@ -1,0 +1,43 @@
+@page
+@model WebApp.Pages.GamePages.NewPresetGame
+
+@{
+    Layout = "_Layout";
+}
+<div>
+    @{
+        if (Model.Difficulty == 1)
+        {
+            <h2>Start new beginner game:</h2>
+        }
+        else if (Model.Difficulty == 2)
+        {
+            <h2>Start new intermediate game:</h2>
+        }
+        else if (Model.Difficulty == 2)
+        {
+            <h2>Start new expert game:</h2>
+        }
+    } 
+        
+        <hr>
+    <form method="post">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="col-md-4">
+            <div class="form-group ">
+                <label asp-for="GameState.Name" class="control-label"></label>
+                <input asp-for="GameState.Name" class="form-control"/>
+                <span asp-validation-for="GameState.Name" class="text-danger"></span>
+            </div>
+            <input type="hidden" asp-for="GameState.BoardWidth" value="4" class="form-control"/>
+            <input type="hidden" asp-for="GameState.BoardHeight" value="4" class="form-control"/>
+
+            <input type="hidden" value="@Model.Difficulty" name="difficulty">
+
+            <div class="form-group">
+                <input type="submit" value="Start game" class="btn btn-success"/>
+            </div>
+            <a class="btn btn-primary" id="gameTable" asp-page="GameIndex">Back to main menu</a>
+        </div>
+    </form>
+</div>

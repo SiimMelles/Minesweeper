@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "eoW03ub0fT8BCRQUMcj1THMJvy3ejnhKahdJwNPxOUOtRBcr3Tgwfr/5qqNsN+/VVM9+5VoqufHbJGtoOJWM1g==",
+  "success": true,
+  "projectFilePath": "/Users/siimmelles/CS/sygis/MineSweeper/Domain/Domain.csproj",
+  "expectedPackageFiles": [
+    "/Users/siimmelles/.nuget/packages/system.componentmodel.annotations/4.7.0/system.componentmodel.annotations.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,68 @@
+@page
+@model WebApp.Pages.GamePages.GameIndex
+
+@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="padding-bottom: 15px">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Start Beginner game</h5>
+                    <p class="card-text">Start Beginner difficulty game: 9x9 field with 10 mines on the board.</p>
+                    <a asp-page="./NewPresetGame" asp-route-difficulty="1" class="btn btn-success">Go</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="padding-bottom: 15px">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Start Intermediate game</h5>
+                    <p class="card-text">Start Intermediate difficulty game: 16x16 field with 30 mines on the board.</p>
+                    <a asp-page="./NewPresetGame" asp-route-difficulty="2" class="btn btn-success">Go</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="padding-bottom: 15px">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Start Expert game</h5>
+                    <p class="card-text">Start Expert difficulty game: 30x16 field with 99 mines on the board.</p>
+                    <a asp-page="./NewPresetGame" asp-route-difficulty="3" class="btn btn-success">Go</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="padding-bottom: 15px">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Start new Custom Game</h5>
+                    <p class="card-text">Choose size of the field and ammount of mines on the board.</p>
+                    <a asp-page="NewCustomGame" class="btn btn-success">Go</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="padding-bottom: 15px">    
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Load game from Save</h5>
+                    <p class="card-text">Continue game from database save.</p>
+                    <a asp-page="LoadGame" class="btn btn-success">Go</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

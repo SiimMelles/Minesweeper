@@ -1,0 +1,15 @@
+/Users/siimmelles/CSharp2019/icd0008-2019f/MineSweeper/Handler/bin/Debug/netstandard2.1/Handler.deps.json
+/Users/siimmelles/CSharp2019/icd0008-2019f/MineSweeper/Handler/bin/Debug/netstandard2.1/Handler.dll
+/Users/siimmelles/CSharp2019/icd0008-2019f/MineSweeper/Handler/bin/Debug/netstandard2.1/Handler.pdb
+/Users/siimmelles/CSharp2019/icd0008-2019f/MineSweeper/Handler/bin/Debug/netstandard2.1/DAL.dll
+/Users/siimmelles/CSharp2019/icd0008-2019f/MineSweeper/Handler/bin/Debug/netstandard2.1/Domain.dll
+/Users/siimmelles/CSharp2019/icd0008-2019f/MineSweeper/Handler/bin/Debug/netstandard2.1/GameEngine.dll
+/Users/siimmelles/CSharp2019/icd0008-2019f/MineSweeper/Handler/bin/Debug/netstandard2.1/DAL.pdb
+/Users/siimmelles/CSharp2019/icd0008-2019f/MineSweeper/Handler/bin/Debug/netstandard2.1/GameEngine.pdb
+/Users/siimmelles/CSharp2019/icd0008-2019f/MineSweeper/Handler/bin/Debug/netstandard2.1/Domain.pdb
+/Users/siimmelles/CSharp2019/icd0008-2019f/MineSweeper/Handler/obj/Debug/netstandard2.1/Handler.csprojAssemblyReference.cache
+/Users/siimmelles/CSharp2019/icd0008-2019f/MineSweeper/Handler/obj/Debug/netstandard2.1/Handler.AssemblyInfoInputs.cache
+/Users/siimmelles/CSharp2019/icd0008-2019f/MineSweeper/Handler/obj/Debug/netstandard2.1/Handler.AssemblyInfo.cs
+/Users/siimmelles/CSharp2019/icd0008-2019f/MineSweeper/Handler/obj/Debug/netstandard2.1/Handler.csproj.CopyComplete
+/Users/siimmelles/CSharp2019/icd0008-2019f/MineSweeper/Handler/obj/Debug/netstandard2.1/Handler.dll
+/Users/siimmelles/CSharp2019/icd0008-2019f/MineSweeper/Handler/obj/Debug/netstandard2.1/Handler.pdb

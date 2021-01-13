@@ -1,0 +1,53 @@
+@page
+@model WebApp.Pages.GamePages.LoadGame
+
+@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<div class="container">
+    @{
+        if (Model.GameStates.Count > 0)
+        {
+            <a class="btn btn-primary" id="gameTable" asp-page="GameIndex" style="margin-bottom:30px">Back to main menu</a>  
+            <br>
+
+            <div class="row">
+                @for (var index = 0; index < Model.GameStates.Count; index++)
+                {
+                    var gameState = Model.GameStates[index];
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="padding-bottom: 15px">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">@gameState.Name</h5>
+                                <p class="card-text">@gameState.BoardWidth x @gameState.BoardHeight Gameboard
+                                    with @gameState.MinesAmount mines on the board.</p>
+                                <a asp-page="./GameRunner" asp-route-gameId="@gameState.GameStateId" class="btn btn-success">Play</a>
+                                <a asp-page="./Delete" asp-route-id="@gameState.GameStateId" class="btn btn-danger">Delete</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+        else
+        {
+            <h4 style="text-align: center">No Gamesaves in database!</h4>
+            <div class="container">
+                <div class="text-center">
+                    <a class="btn btn-primary" id="gameTable" asp-page="GameIndex">Start a new preset game</a>  or  
+                     <a class="btn btn-primary" id="gameTable" asp-page="NewCustomGame">Start a new custom game</a>
+                </div>
+            </div>
+        }
+    }
+    
+</div>
+</body>
+</html>

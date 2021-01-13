@@ -1,0 +1,15 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Start playing <a asp-page="GamePages/GameIndex">our new and amazing Minesweeper game</a>.
+        <br>or click here:</p>
+    
+    <a class="btn btn-primary" id="gameTable" asp-page="GamePages/GameIndex">Main menu</a>  
+
+    
+</div>

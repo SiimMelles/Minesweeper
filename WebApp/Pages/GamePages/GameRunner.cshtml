@@ -1,0 +1,183 @@
+@page
+@using System.ComponentModel
+@using GameEngine
+@model WebApp.Pages.GamePages.GameRunner
+
+@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<div>
+    @{
+        if (!(Model.Game.GameLost ^ Model.Game.GameWon))
+        {
+            <div class="text-center">
+                @if (Model.Flag)
+                {
+                    <p>Flag Mode: <b>On</b></p>    
+                }
+                else
+                {
+                    <p>Flag Mode: <b>Off</b></p> 
+                }
+                Flag Switch
+                <a class="btn btn-success" asp-page="./GameRunner" asp-route-gameId="@Model.GameId" asp-route-flag="true">On</a>
+                <a class="btn btn-danger" asp-page="./GameRunner" asp-route-gameId="@Model.GameId" asp-route-flag="false">Off</a>
+            </div>
+            <br>
+        }
+    }
+    
+    @{
+        if (Model.Game.GameLost)
+        {
+            <h4 style="text-align: center; color: red">You Lost!</h4>
+        }
+        else if (Model.Game.GameWon)
+        {
+            <h4 style="text-align: center; color: limegreen">You Won!</h4>
+        }
+    }
+    <table id="gameTable">
+        <thead class="thead-dark">
+        <tr>
+            <th></th>
+            @for (var x = 0; x < Model.Game.BoardWidth; x++)
+            {
+                <th>
+                    @(x + 1)
+                </th>
+            }
+        </tr>
+        </thead>
+
+
+        @for (var y = 0; y < Model.Game.BoardHeight; y++)
+        {
+            <tr>
+                <td>@(y + 1)</td>
+                @for (var x = 0; x < Model.Game.BoardWidth; x++)
+                {
+                    if (Model.Game.Board[y, x].IsFlagged)
+                    {
+                        if (Model.Game.GameLost)
+                        {
+
+                            <td>
+                                <a class="btn btn-secondary" asp-route-gameId="@Model.GameId" disabled><span class="fa fa-flag"></span></a>
+                            </td>
+
+                        }
+                        else
+                        {
+                            <td>
+                                <a class="btn btn-secondary" asp-page="./GameRunner" asp-route-gameId="@Model.GameId" asp-route-flag="@Model.Flag" asp-route-col="@x" asp-route-row="@y"><h6 class="fa fa-flag" ></h6></a>
+                            </td>
+                        }
+                    }
+
+                    else if (Model.Game.Board[y, x].IsMine)
+                    {
+                        <td style="background: red">
+                        <img src="~/mine.png" alt="X">
+                        </td>
+
+                    }
+                    else if (Model.Game.Board[y, x].IsRevealed)
+                    {
+                        <td>
+                            <a class="btn btn-light" disabled>@Html.Raw(GetGameButtonLabel(Model.Game.Board[y, x]))</a>
+                        </td>
+                    }
+                    else
+                    {
+                        if (Model.Game.GameLost)
+                        {
+                            <td>
+                                <a class="btn btn-secondary" disabled>@Html.Raw(GetGameButtonLabel(Model.Game.Board[y, x]))</a>
+                            </td>
+                        }
+                        else
+                        {
+                            <td>
+                                <a class="btn btn-secondary" asp-page="./GameRunner" asp-route-gameId="@Model.GameId" asp-route-flag="@Model.Flag" asp-route-col="@x" asp-route-row="@y">@Html.Raw(GetGameButtonLabel(Model.Game.Board[y, x]))</a>
+                            </td>
+
+                        }
+                    }
+                }
+            </tr>
+        }
+    </table>
+    <br>
+    @{
+        if (Model.Game.GameLost || Model.Game.GameWon)
+        {  
+            <div class="container">
+                <div class="text-center">
+                    <a class="btn btn-primary" id="gameTable" asp-page-handler="StartNewGame" asp-route-gameId="@Model.GameId">Play new Game</a>
+                </div>
+                <br>
+                <div class="text-center">
+                    <a class="btn btn-success" id="gameTable" asp-page-handler="StartSameGame" asp-route-gameId="@Model.GameId">Play same game again</a>
+                </div>
+                
+            </div>
+        }
+        else
+        {
+            <div class="container">
+                <div class="text-center">
+                    <a class="btn btn-primary" id="gameTable" asp-page="GameIndex">Save and quit to menu</a>
+                </div>
+            </div>
+        }
+    }
+</div>
+
+@functions
+{
+
+    private static char GetGameButtonLabel(Cell cell)
+    {
+        
+        if (!cell.IsRevealed)
+        {
+            return '-';
+        }
+        switch (cell.MinesAround)
+        {
+            case 0:
+                return ' ';
+            case 1:
+                return '1';
+            case 2:
+                return '2';
+            case 3:
+                return '3';
+            case 4:
+                return '4';
+            case 5:
+                return '5';
+            case 6:
+                return '6';
+            case 7:
+                return '7';
+            case 8:
+                return '8';
+            default:
+                throw new InvalidEnumArgumentException("Unknown cell option!");
+        }
+    }
+
+}
+
+</body>
+</html>
